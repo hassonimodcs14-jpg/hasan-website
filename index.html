@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hasan | Modern Style</title>
+  <title>Hassoni | Modern Style</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
@@ -36,10 +36,27 @@
     h1 {
       font-size: 60px;
       margin: 0;
+      color: white;
+      text-shadow: 3px 3px 8px black;
     }
 
     p {
       font-size: 20px;
+    }
+
+    .highlight-text {
+      display: inline-block;
+      padding: 8px 15px;
+      background: white;
+      border-radius: 20px;
+      border: 2px solid black;
+      transition: 0.3s;
+    }
+
+    .highlight-text:hover {
+      background: #FFD700;
+      color: black;
+      transform: scale(1.1);
     }
 
     .menu {
@@ -52,15 +69,16 @@
       text-decoration: none;
       color: #333;
       border-radius: 25px;
-      background: ;
+      background: white;
+      border: 2px solid black;
       display: inline-block;
       transition: all 0.3s ease;
     }
 
     .menu a:hover {
       transform: translateY(-5px) scale(1.05);
-      background: #4CAF50;
-      color: ;
+      background: #FFD700;
+      color: black;
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
@@ -76,6 +94,7 @@
       max-width: 500px;
       background: white;
       border-radius: 15px;
+      border: 2px solid black;
       transition: 0.3s;
     }
 
@@ -83,6 +102,35 @@
       transform: scale(1.05);
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
+
+    .title {
+      display: inline-block;
+      padding: 5px 15px;
+      border-bottom: 3px solid #FFD700;
+      transition: 0.3s;
+    }
+
+    .title:hover {
+      color: #FFD700;
+      transform: scale(1.1);
+    }
+
+    .hobbies span {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: white;
+      border-radius: 20px;
+      border: 2px solid black;
+      transition: 0.3s;
+    }
+
+    .hobbies span:hover {
+      background: #FFD700;
+      transform: scale(1.2);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
   </style>
 </head>
 <body>
@@ -91,7 +139,7 @@
   <div class="overlay"></div>
   <div class="content">
     <h1>Hassoni</h1>
-    <p> class="highlight-text">Student | 12 years old</p>
+    <p class="highlight-text">Student | 12 years old</p>
 
     <div class="menu">
       <a href="#about">About</a>
@@ -103,7 +151,7 @@
 
 <div class="section" id="about">
   <div class="card">
-    <h2>class="titel"About Me</h2>
+    <h2 class="title">About Me</h2>
     <p>I like games and computers.</p>
   </div>
 </div>
@@ -111,13 +159,16 @@
 <div class="section" id="hobbies">
   <div class="card">
     <h2 class="title">Hobbies</h2>
-    <p>Gaming | Reading</p>
+    <p class="hobbies">
+      <span>Gaming</span>
+      <span>Reading</span>
+    </p>
   </div>
 </div>
 
 <div class="section" id="contact">
   <div class="card">
-    <h2>Contact</h2>
+    <h2 class="title">Contact</h2>
     <p>Email: hassonimodcs14@gmail.com</p>
   </div>
 </div>
