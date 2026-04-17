@@ -21,3 +21,119 @@
     }
 
     h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .cloud {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.9;
+      animation: moveClouds 60s linear infinite;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: '';
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .cloud1 {
+      width: 200px;
+      height: 60px;
+      top: 100px;
+      left: -250px;
+    }
+
+    .cloud1::before {
+      width: 100px;
+      height: 100px;
+      top: -40px;
+      left: 20px;
+    }
+
+    .cloud1::after {
+      width: 120px;
+      height: 120px;
+      top: -50px;
+      right: 20px;
+    }
+
+    .cloud2 {
+      width: 150px;
+      height: 50px;
+      top: 200px;
+      left: -200px;
+      animation-duration: 90s;
+    }
+
+    @keyframes moveClouds {
+      from { transform: translateX(0); }
+      to { transform: translateX(2000px); }
+    }
+
+    .container {
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 20px;
+      width: 80%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<header>
+  <h1>Hasan</h1>
+  <p>12-year-old student</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>Hello. I am Hasan. I like games and learning.</p>
+  </div>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I study at school. I like math and computers.</p>
+  </div>
+
+  <div class="card">
+    <h2>Hobbies</h2>
+    <p>Games | Football | Reading | Coding</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Hasan</p>
+</footer>
+
+</body>
+</html>
